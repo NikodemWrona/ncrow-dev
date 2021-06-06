@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - name: Build docker image
         run: |
-          docker build --tag "docker.pkg.github.com/nikodemwrona/ncrow-dev/ncrow-dev:latest" \
-          .
+          docker build --tag "docker.pkg.github.com/nikodemwrona/ncrow-dev/ncrow-dev:latest" .
         working-directory: .
 
       - name: Docker login
@@ -21,3 +21,12 @@ jobs:
 
       - name: Push Docker image
         run: docker push "docker.pkg.github.com/nikodemwrona/ncrow-dev/ncrow-dev:latest"
+
+      - name: Deploy ncrow-dev
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          command: ${{ secrets.DEPLOY_COMMAND }}
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER}}
+          privateKey: ${{ secrets.SECRET_KEY}}
+
