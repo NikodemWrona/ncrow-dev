@@ -1,2 +1,5 @@
 export * from './Topbar'
+export * from './Welcome'
+export * from './Contact'
+export * from './Footer'
 export * from './_shared'

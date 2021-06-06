@@ -1,1 +1,7 @@
 export { Root } from './Root'
+export { Typography } from './Typography'
+export { BaseLink } from './BaseLink'
+export { FullHeightSection } from './FullHeightSection'
+export { VerticalPadding } from './VerticalPadding'
+export { HideOnSpecificDevice } from './HideOnSpecificDevice'
+export { HorizontalMargin } from './HorizontalMargin'

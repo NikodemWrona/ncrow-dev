@@ -1,9 +1,13 @@
-import { Root, Topbar } from '../components';
+import { Root, Topbar, Welcome, Footer, FullHeightSection } from '../components';
 
-export default function Home() {
+export default function HomePage(): JSX.Element {
   return (
     <Root>
-      <Topbar title={'ncrow:dev'} />
+      <FullHeightSection>
+        <Topbar />
+        <Welcome />
+        <Footer />
+      </FullHeightSection>
     </Root>
   )
 }

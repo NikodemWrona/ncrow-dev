@@ -1,0 +1,1 @@
+export { LottieComponent } from './LottieComponent'

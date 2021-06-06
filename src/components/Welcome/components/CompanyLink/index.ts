@@ -1,0 +1,1 @@
+export { CompanyLink } from './CompanyLink'
