@@ -27,6 +27,6 @@ jobs:
         with:
           command: ${{ secrets.DEPLOY_COMMAND }}
           host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER}}
-          privateKey: ${{ secrets.SECRET_KEY}}
+          username: ${{ secrets.VPS_USER }}
+          privateKey: ${{ secrets.SECRET_KEY }}
 
