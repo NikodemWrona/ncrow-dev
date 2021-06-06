@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build docker image
         run: |
-          docker build --tag "docker.pkg.github.com/NikodemWrona/ncrow-dev/ncrow-dev:latest" \
+          docker build --tag "docker.pkg.github.com/nikodemwrona/ncrow-dev/ncrow-dev:latest" \
           .
         working-directory: .
 
@@ -20,4 +20,4 @@ jobs:
         run: docker login docker.pkg.github.com -u $GITHUB_ACTOR --password ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push Docker image
-        run: docker push "docker.pkg.github.com/NikodemWrona/ncrow-dev/ncrow-dev:latest"
+        run: docker push "docker.pkg.github.com/nikodemwrona/ncrow-dev/ncrow-dev:latest"
