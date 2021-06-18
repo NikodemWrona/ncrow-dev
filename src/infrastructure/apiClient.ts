@@ -11,13 +11,9 @@ export class ApiClient {
   }
 
   async sendMessage(email: string, message: string): Promise<void> {
-    console.log(API_URL)
-
-    const test = await this.httpClient.post('/contact', {
+    await this.httpClient.post('/contact', {
       email,
       message
     })
-
-    console.log(test)
   }
 }
