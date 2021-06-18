@@ -8,5 +8,7 @@ type Options = {
 
 export const createHttpClient = (options: Options): HttpClient => {
   const { baseURL } = options
+  console.log('BASE URL :', baseURL)
+
   return axios.create({ baseURL })
 }

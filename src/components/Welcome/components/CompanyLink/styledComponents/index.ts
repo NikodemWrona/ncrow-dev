@@ -1,1 +1,0 @@
-export { CompanyLinkWrapper } from './CompanyLinkWrapper'

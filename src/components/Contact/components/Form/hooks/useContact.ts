@@ -10,7 +10,7 @@ export const useContactFormController = (): ContactFormController => {
   const apiClient = useApiClient()
 
   const sendMessage = (payload: Payload): void => {
-    apiClient.sendMessage(payload.email, payload.message)
+    void apiClient.sendMessage(payload.email, payload.message)
   }
 
 

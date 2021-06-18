@@ -5,5 +5,5 @@ html, body, #__next {
   font-family: 'Roboto Mono', monospace;
   height: 100%;
   box-sizing: border-box;
-  background-color: #242424;
+  background-color: #000;
 }
