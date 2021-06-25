@@ -6,7 +6,7 @@ import { IconButton, NextLink } from '@__/components';
 
 export const Topbar: FC = () => {
   const items = [
-    <IconButton icon={'github'} link={'https://github.com/NikodemWrona'} />
+    <IconButton key="topbar_item_1" icon={'github'} link={'https://github.com/NikodemWrona'} />
   ]
 
   return (
