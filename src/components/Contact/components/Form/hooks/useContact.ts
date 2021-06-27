@@ -12,8 +12,7 @@ export const useContactFormController = (): ContactFormController => {
   const sendMessage = (payload: Payload): void => {
     void apiClient.sendMessage(payload.email, payload.message)
   }
-
-
+  
   return {
     sendMessage
   }
