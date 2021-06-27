@@ -27,10 +27,7 @@ export class ApiClient {
         message
       })
 
-      if (this.notifier) {
-      }
       this.notifier.success('Thanks!')
-
     } catch(error) {
       this.notifier.error('Something went wrong!')
     }
