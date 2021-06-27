@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { BaseButton } from '../../styledComponents'
-import { BRAND_COLOR, WHITE } from '@__/styles';
+import { Colors } from '@__/styles';
 
 export const IconButtonWrapper = styled(BaseButton)`
-  fill: ${WHITE};
+  fill: #fff;
   
   &:hover {
-    fill: ${BRAND_COLOR};
+    fill: ${Colors.BRAND};
   }
 `

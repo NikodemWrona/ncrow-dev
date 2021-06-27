@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { BRAND_COLOR } from '../../../styles'
+import { Colors } from '../../../styles'
 
 export const BaseLink = styled.a`
   outline: none;
@@ -12,7 +12,7 @@ export const BaseLink = styled.a`
   
   &:hover {
     span {
-      color: ${BRAND_COLOR};
+      color: ${Colors.BRAND};
     }
   }
 `

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { BRAND_COLOR } from '@__/styles';
+import { Colors } from '@__/styles';
 
 export const IconLinkWrapper = styled.a`
   background-color: transparent;
@@ -13,6 +13,6 @@ export const IconLinkWrapper = styled.a`
   outline: none;
   
   &:hover {
-    fill: ${BRAND_COLOR};
+    fill: ${Colors.BRAND};
   }
 `

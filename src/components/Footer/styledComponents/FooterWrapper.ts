@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import { SECONDARY_BACKGROUND_COLOR } from '@__/styles'
+import { Colors } from '@__/styles'
 
 export const FooterWrapper = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${SECONDARY_BACKGROUND_COLOR};
+  background-color: ${Colors.BACKGROUND_MAIN};
   padding: 1rem 1.5rem;
 `

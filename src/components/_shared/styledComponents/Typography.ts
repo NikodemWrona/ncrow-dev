@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
-import { MAIN_FONT_COLOR, devices } from '@__/styles'
+import { devices, Colors } from '@__/styles'
 
 type TypographyProps = {
   customFontSize?: number
+  customFontColor?: string
 }
 
 const DEFAULT_FONT_SIZE = 2;
@@ -13,7 +14,7 @@ const getFontSize = (fontSize?: number): number => {
 }
 
 export const Typography = styled.div<TypographyProps>`
-  color: ${MAIN_FONT_COLOR};
+  color: ${({ customFontColor }) => customFontColor ? customFontColor : Colors.FONT_MAIN};
   font-size: ${({ customFontSize }) => customFontSize ? customFontSize : 3}rem;
 
   @media (max-width: ${devices.SMALL}) {

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { MAIN_BACKGROUND_COLOR } from '@__/styles'
+import { Colors } from '@__/styles'
 
 export const WelcomeWrapper = styled.div`
   display: flex;
-  background-color: ${MAIN_BACKGROUND_COLOR};
+  background-color: ${Colors.BACKGROUND_MAIN};
   justify-content: center;
 `
